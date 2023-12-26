@@ -1,4 +1,4 @@
-package guru.springframework.msscbeerservice.web.model;
+package guru.springframework.msscbeerservice.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -20,7 +20,7 @@ public class BeerDto {
     private UUID id;
     private int version;
 
-    private OffsetDateTime createDate;
+    private OffsetDateTime createdDate;
     private OffsetDateTime lastModifiedDate;
 
     private String beerName;
