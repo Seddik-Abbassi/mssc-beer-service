@@ -1,4 +1,4 @@
-package guru.springframework.msscbeerservice.model;
+package guru.springframework.msscbeerservice.domain;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -7,6 +7,7 @@ import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.math.BigDecimal;
+import java.sql.Timestamp;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
@@ -30,9 +31,9 @@ public class Beer {
 
     @CreationTimestamp
     @Column(updatable = false)
-    private OffsetDateTime createdDate;
+    private Timestamp createdDate;
     @UpdateTimestamp
-    private OffsetDateTime lastModifiedDate;
+    private Timestamp lastModifiedDate;
 
     private String beerName;
 

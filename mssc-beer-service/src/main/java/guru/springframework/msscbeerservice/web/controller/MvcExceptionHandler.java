@@ -1,4 +1,4 @@
-package guru.springframework.msscbeerservice.controller;
+package guru.springframework.msscbeerservice.web.controller;
 
 import jakarta.validation.ConstraintViolationException;
 import org.springframework.http.HttpStatus;
