@@ -23,8 +23,8 @@ import java.util.UUID;
 public class BeerDto {
     @Null
     private UUID id;
-    @Null
-    private int version;
+
+    private Integer version;
     @Null
     private OffsetDateTime createdDate;
     @Null
