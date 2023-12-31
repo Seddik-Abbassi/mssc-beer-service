@@ -8,7 +8,6 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
-import java.time.OffsetDateTime;
 import java.util.UUID;
 
 /**
@@ -24,8 +23,8 @@ public class Beer {
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
-    @Column(length = 36, updatable = false, nullable = false)
-    private String id;
+    @Column(length = 36, columnDefinition = "varchar(36)", updatable = false, nullable = false)
+    private UUID id;
     @Version
     private Long version;
 
