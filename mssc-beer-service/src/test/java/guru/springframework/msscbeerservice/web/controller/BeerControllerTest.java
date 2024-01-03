@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import guru.springframework.msscbeerservice.bootstrap.BeerLoader;
 import guru.springframework.msscbeerservice.services.BeerService;
 import guru.springframework.msscbeerservice.web.model.BeerDto;
-import guru.springframework.msscbeerservice.web.model.BeerStyleEnumm;
+import guru.springframework.msscbeerservice.web.model.BeerStyleEnum;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,7 +66,7 @@ class BeerControllerTest {
     BeerDto getValidBeerDto() {
         return BeerDto.builder()
                 .beerName("My Beer")
-                .beerStyle(BeerStyleEnumm.SAISON)
+                .beerStyle(BeerStyleEnum.SAISON)
                 .price(new BigDecimal("2.39"))
                 .upc(BeerLoader.BEER_1_UPC)
                 .version(0)

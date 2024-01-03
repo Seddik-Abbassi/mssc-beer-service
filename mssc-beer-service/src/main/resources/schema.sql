@@ -1,4 +1,4 @@
-CREATE TABLE beer (
+CREATE TABLE IF NOT EXISTS beer (
                       id VARCHAR(36) NOT NULL,
                       version BIGINT,
                       created_date TIMESTAMP,
