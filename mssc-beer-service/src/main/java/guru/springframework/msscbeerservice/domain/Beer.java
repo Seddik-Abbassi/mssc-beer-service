@@ -13,12 +13,12 @@ import java.util.UUID;
 /**
  * Created by AD on 26/12/2023
  */
-@Getter
-@Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 @Builder
 @Entity
+@Table(name = "BEER")
 public class Beer {
     @Id
     @GeneratedValue(generator = "UUID")
